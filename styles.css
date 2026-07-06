@@ -91,10 +91,30 @@ body {
     text-shadow: 0 0 20px rgba(0, 229, 255, 0.5), 0 0 40px rgba(0, 229, 255, 0.2);
     letter-spacing: 4px;
     line-height: 1;
+    font-variant-numeric: tabular-nums;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.clock-display span {
+    display: inline-block;
+    text-align: center;
+}
+
+#clock-hours,
+#clock-minutes,
+#clock-seconds {
+    min-width: 2ch;
+}
+
+.clock-separator {
+    min-width: 0.5ch;
 }
 
 .clock-separator {
     animation: blink 1s infinite;
+    min-width: 0.5ch;
 }
 
 @keyframes blink {
@@ -106,6 +126,8 @@ body {
     font-size: 0.4em;
     color: var(--text-secondary);
     vertical-align: super;
+    min-width: 3ch;
+    font-variant-numeric: tabular-nums;
 }
 
 .clock-date {
@@ -151,10 +173,25 @@ body {
     font-weight: 700;
     color: var(--secondary);
     text-shadow: 0 0 15px rgba(255, 109, 0, 0.4);
+    font-variant-numeric: tabular-nums;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.countdown-display span {
+    display: inline-block;
+    text-align: center;
+}
+
+#countdown-min,
+#countdown-sec {
+    min-width: 2ch;
 }
 
 .countdown-sep {
     animation: blink 0.5s infinite;
+    min-width: 0.5ch;
 }
 
 .countdown-rider {

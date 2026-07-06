@@ -100,7 +100,7 @@ function init() {
     
     // Iniciar reloj
     updateClock();
-    setInterval(updateClock, 50); // Actualizar cada 50ms para milisegundos
+    setInterval(updateClock, 200); // Actualizar cada 200ms para estabilidad visual
     
     // Iniciar loop de countdown
     setInterval(updateCountdown, 100);
